@@ -132,7 +132,7 @@ header {
 .hero-intro {
   display: grid;
   position: relative;
-  height: 87vh;
+  height: max(87vh, fit-content);
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
@@ -148,7 +148,8 @@ header {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 5rem;
   z-index: 2;
-  width: 50%;
+  margin: 2rem;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -333,7 +334,6 @@ footer {
   background-size: 130%;
   background-repeat: repeat-x;
   background-color: #A3C1CF;
-  gap: 10rem;
   align-items: center;
 }
 .focus-point__title {
@@ -341,6 +341,7 @@ footer {
   font-weight: 700;
   color: #fff;
   width: 100%; /* Aligns itself to left */
+  padding-bottom: 4rem;
 }
 .focus-point__wrapper {
   display: flex;
@@ -438,8 +439,14 @@ footer {
   .footer__info__content {
     width: 80%;
   }
+  .focus-point__title {
+    padding-bottom: 5rem;
+  }
+  .focus-point__wrapper {
+    padding-bottom: 5rem;
+  }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .header__logo,
   .footer__logo {
     display: none;
@@ -501,6 +508,13 @@ footer {
   .footer__info-wrapper {
     width: 85%;
   }
+  .focus-point {
+    padding: 1rem 2rem;
+  }
+  .focus-point__title,
+  .products h2 {
+    font-size: 6rem;
+  }
 }
 @media screen and (max-width: 500px) {
   .footer__section {
@@ -521,6 +535,9 @@ footer {
   }
   header {
     padding-inline: 2rem;
+  }
+  .focus-point__wrapper {
+    padding-bottom: 7rem;
   }
 }
 @media screen and (max-width: 450px) {
