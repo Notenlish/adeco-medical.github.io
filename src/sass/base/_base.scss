@@ -1,0 +1,67 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+  box-sizing: border-box;
+  color-scheme: light;
+  caret-color: map-get($colors, "primary-light");
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  min-height: 100vh;
+  background-color: map-get($colors, "grey-light");
+  overflow-x: hidden;
+}
+
+img,
+picture,
+svg,
+video,
+source {
+  display: block;
+  max-width: 100%;
+}
+
+a,
+abbr {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  border: none;
+  background-color: transparent;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+textarea,
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  resize: none;
+}
+
+/**/
+html {
+  scroll-behavior: smooth;
+}
